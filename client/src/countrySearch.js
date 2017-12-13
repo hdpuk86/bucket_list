@@ -1,6 +1,6 @@
 const CountrySearch = function(searchString, callback) {
   const onCountriesRequestLoad = function(event) {
-    if (event.status !== 200) return callback([]);
+    if (this.status !== 200) return callback([]);
     const resultString = event.target.responseText;
     let searchResults = JSON.parse(resultString);
     callback(searchResults);
