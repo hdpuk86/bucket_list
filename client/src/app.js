@@ -19,7 +19,7 @@ var bucketListRequestComplete = function(){
 };
 
 var loadBucketList = function(){
-  var url = "/bucket_list";
+  var url = "/bucketlist";
   makeBucketListRequest(url, bucketListRequestComplete);
 };
 

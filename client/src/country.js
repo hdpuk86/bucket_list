@@ -4,7 +4,7 @@ var Country = function(options){
   this.api_index = options.api_index;
   this.capital = options.capital;
   this.subregion = options.subregion;
-  this.flag = options.flag;
+  // this.flag = options.flag;
   this.visited = false;
 
 }
