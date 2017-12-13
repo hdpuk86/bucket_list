@@ -4,12 +4,29 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-
 	<script src="bundle.js"></script>
-
-	<title>Document</title>
+	<title>Bucket List</title>
 </head>
 <body>
-	<h1>Hello</h1>
+	<header>
+		<h1>Bucket List</h1>
+	</header>
+	<body>
+		<div id="search-view">
+			<form method="GET" action="/countries">
+				<input type="text" placeholder="Search Country">
+				<button type="submit">Search</button>
+			</form>
+			<div id="search-list">
+
+			</div>
+		</div>
+		<div id="bucketlist-view">
+			<h1>My Bucket List</h1>
+			<div id="bucket-list">
+
+			</div>
+		</div>
+	</body>
 </body>
 </html>
