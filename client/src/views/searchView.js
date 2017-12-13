@@ -9,9 +9,11 @@ SearchView.prototype = {
       li.innerText = country.name;
       var button = document.createElement('button');
       button.innerText = "Add";
-      var ul = document.getElementById = "search-list";
+      var div = document.getElementById = "search-list";
+      var ul = document.createElement('ul');
       li.appendChild(button);
       ul.appendChild(li);
+      div.appendChild(ul);
     }
   }
 };
