@@ -1,3 +1,6 @@
+var searchView = require('./views/searchView');
+
+
 const CountrySearch = require('./countrySearch');
 
 var makeBucketListRequest = function(url, callback){
@@ -21,10 +24,21 @@ var loadBucketList = function(){
 };
 
 const renderCountries = function(array) {
-  console.log(array);
+  new searchView(array);
 };
 
 window.addEventListener("load", function(){
-  new CountrySearch('united', renderCountries);
-	loadBucketList();
+  loadBucketList();
+
+  document.getElementById('search-form').addEventListener('submit', function(event){
+    event.preventDefault();
+    var text = document.getElementById('search-text').value;
+    if (text !== '') {
+      new CountrySearch(text, renderCountries);
+    }
+  });
+
+
+
+
 });
