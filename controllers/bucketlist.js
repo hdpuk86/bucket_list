@@ -22,5 +22,10 @@ bucketlistRouter.post('/new/:country', function(req, res){
   res.redirect('/');
 });
 
+bucketlistRouter.post('/remove/:country', function(req, res){
+  db.collection('bucketlist').deleteOne({name: req.params.country});
+  res.redirect('/');
+});
+
 
 module.exports = bucketlistRouter;

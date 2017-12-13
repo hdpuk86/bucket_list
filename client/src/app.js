@@ -26,7 +26,6 @@ var loadBucketList = function(){
 };
 
 const renderCountries = function(array) {
-  debugger;
   new searchView(array);
 };
 
