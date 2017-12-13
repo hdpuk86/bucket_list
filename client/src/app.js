@@ -1,7 +1,6 @@
 var searchView = require('./views/searchView');
 var BucketListView = require('./views/bucketListView');
 
-
 const CountrySearch = require('./countrySearch');
 
 var makeBucketListRequest = function(url, callback){
