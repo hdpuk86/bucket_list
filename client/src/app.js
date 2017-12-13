@@ -15,7 +15,7 @@ var bucketListRequestComplete = function(){
 
 var loadBucketList = function(){
   var url = "/bucket_list";
-  makeRequest(url, requestComplete);
+  makeBucketListRequest(url, bucketListRequestComplete);
 };
 
 window.addEventListener("load", function(){
