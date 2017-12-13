@@ -21,6 +21,4 @@ var loadBucketList = function(){
 window.addEventListener("load", function(){
 	alert("Loaded!");
 	loadBucketList();
-
-
 });
