@@ -6,7 +6,7 @@ BucketListView.prototype = {
   render: function(bucketlist){
     var div = document.getElementById('bucket-list');
     div.innerText = "";
-    bucketlist.forEach(function(country{
+    bucketlist.forEach(function(country){
       var li = document.createElement('li');
       li.innerText = country.name;
 

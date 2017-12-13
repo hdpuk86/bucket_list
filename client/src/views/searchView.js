@@ -16,8 +16,9 @@ SearchView.prototype = {
       form.method = "POST";
       var newCountry = new Country(country);
       console.log(country);
+      let countryString = JSON.stringify(newCountry);
 
-      form.action = "/bucketlist/new/" + JSON.stringify(newCountry);
+      form.action = "/bucketlist/new/" + countryString;
 
       var button = document.createElement('button');
       button.innerText = "Add";

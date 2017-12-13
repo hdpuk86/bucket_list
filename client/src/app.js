@@ -1,4 +1,5 @@
 var searchView = require('./views/searchView');
+var BucketListView = require('./views/bucketListView');
 
 
 const CountrySearch = require('./countrySearch');
@@ -16,6 +17,8 @@ var bucketListRequestComplete = function(){
   }
   var jsonString = this.responseText;
   var bucketList = JSON.parse(jsonString);
+  new BucketListView(bucketList);
+
 };
 
 var loadBucketList = function(){
